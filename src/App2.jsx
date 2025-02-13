@@ -1,10 +1,8 @@
 import React from "react";
 
 const App2 = () => {
-  return (
-    <div>App2</div>
-  )
-}
+  return <div>App2</div>;
+};
 
 export default App2;
 
@@ -15,13 +13,12 @@ export default App2;
 // Nomeação de Componente
 // PascalCase
 // Nomeação de Variavel, Função...
-// camelCase 
+// camelCase
 
 // Header por exemplo é um componente em PascalCase
 // Export default posso importar com qualquer nome e sem chaves
 //  export sem default só posso importar entre chaves e com o nome exportado
 // Self closing tag : <Header/>
-
 
 // Nomeação de classes em CSS
 // Metodolokgia BEM
@@ -37,6 +34,36 @@ export default App2;
 // Tag vazia em React se chama fragment
 
 // Componentes recebem "props"
+//myArray.map((currentValue, index) => currentValue +1)
 
-//Spread operator ...
+// {items === 5 ? (
+//   <>
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//   </>
+// ) : (
+//   <>
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//   </>
+// )}
+
+// Array(items)
+//           .fill()
+//           .map((currentValue, index) => (
+//             <SingleItem key={`${title}-${index}`} />
+//           ))
+
+// Spread operator ...
 // cria uma cópia de u array ou objeto
