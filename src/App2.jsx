@@ -35,3 +35,8 @@ export default App2;
 // item-list__header
 
 // Tag vazia em React se chama fragment
+
+// Componentes recebem "props"
+
+//Spread operator ...
+// cria uma cópia de u array ou objeto
