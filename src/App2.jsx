@@ -71,3 +71,8 @@ export default App2;
 
 // Spread operator ...
 // cria uma cópia de u array ou objeto
+
+// Quando componentes se re-renderizão?
+// Uma das ocasiões é quando uma variável de estado usada por esse componente é atualizada
+
+// Hook - useSate()

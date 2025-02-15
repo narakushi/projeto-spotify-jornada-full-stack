@@ -7,11 +7,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Player = ({duration}) => {
+const Player = ({ duration, randomIdFromArtist, randomIdFromArtist2 }) => {
   return (
     <div className="player">
       <div className="player__controllers">
-        <Link to="/song/2">
+        <Link to={`/song/${randomIdFromArtist}`}>
           <FontAwesomeIcon className="player__icon" icon={faBackwardStep} />
         </Link>
 
@@ -20,7 +20,7 @@ const Player = ({duration}) => {
           icon={faCirclePlay}
         />
 
-        <Link to="/song/3">
+        <Link to={`/song/${randomIdFromArtist2}`}>
           <FontAwesomeIcon className="player__icon" icon={faForwardStep} />
         </Link>
       </div>
