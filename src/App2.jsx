@@ -12,8 +12,12 @@ export default App2;
 // const app2 = () => <h1>Ola, mundo!</h1>;
 // Nomeação de Componente
 // PascalCase
+
 // Nomeação de Variavel, Função...
 // camelCase
+
+// Nomeação de classes css
+// kebab-case
 
 // Header por exemplo é um componente em PascalCase
 // Export default posso importar com qualquer nome e sem chaves
