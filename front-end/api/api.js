@@ -1,8 +1,7 @@
 // Fetch ou Axios
-import 'dotenv/config'
 import axios from 'axios';
 
-const {VITE_NODE_ENV} = import.meta.env;
+const { VITE_NODE_ENV } = import.meta.env;
 const URL = VITE_NODE_ENV === "development" ? "http://localhost:3000/api" : "/api";
 
 const responseArtists = await axios.get(`${URL}/artists`);
