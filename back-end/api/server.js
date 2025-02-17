@@ -6,22 +6,30 @@
 import express from "express";
 import cors from 'cors';
 import { db } from "./connect.js";
+import path, { dirname } from "path";
 
 const app = express();
 const PORT = 3000;
+const __dirname = path.resolve();
 
 app.use(cors());
 
-app.get("/", (request, response) => {
+app.get("/api/", (request, response) => {
   response.send("Só vamos trabalhar com os endpoints '/artists' e '/songs'");
 })
 
-app.get("/artists", async (resquest, response) => {
+app.get("/api/artists", async (resquest, response) => {
   response.send(await db.collection("artists").find({}).toArray());
 })
 
-app.get("/songs", async (resquest, response) => {
+app.get("/api/songs", async (resquest, response) => {
   response.send(await db.collection("songs").find({}).toArray());
+})
+
+app.use(express.static(path.join(__dirname, '../../front-end/dist/')))
+
+app.get("*", async (resquest, response) => {
+  response.sendFile(path.join(__dirname, '../../front-end/dist/index.html'));
 })
 
 app.listen(PORT, () => {
